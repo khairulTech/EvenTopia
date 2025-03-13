@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="logo">EvenTopia</h1>
+        <ul class="nav-links">
+            <li><a href="#" class="font-class">Home</a></li>
+            <li><a href="#" class="font-class">Cinema</a></li>
+            <li><a href="#" class="ctn">Sign up/Login</a></li>
+        </ul>
+        <img src="./menu button.png" alt="" class="menu-btn">
+    </nav>
+    <header>
+        <div class="header-content">
+            <h2>Experience the realistic of cinema</h2>
+            <div class="line"></div>
+            <h1>EvenTopia</h1>
+            <a href="#" class="ctn">Go to shows</a>
+        </div>
+    </header>
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</body>
+</html>
